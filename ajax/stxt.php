@@ -1,5 +1,4 @@
 <?php
-
 //Get data from form...
 $postdata = file_get_contents("php://input");
 $request = json_decode($postdata);
@@ -20,7 +19,7 @@ $headers .= "Return-Path: ".$email."\r\n";
 //$headers .= "CC: sombodyelse@noplace.com\r\n";
 //$headers .= "BCC: hidden@special.com\r\n";
 
-mail($to,$subject.$name,$message,$headers,'-f'.$email);
+mail($to,$subject,$message,$headers,'-f'.$email);
 
 /*
 $headers = 'From: user@yourdomain.com' . " " .
