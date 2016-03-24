@@ -16,7 +16,7 @@
 <script type="text/javascript" src="app/app.js"></script>
 </head>
 
-<body ng-controller="appController">
+<body ng-controller="appController" style="background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/skulls.png');">
 <div class="row" style="margin-top:30px;">
 <div class="col-md-4 col-md-offset-4">
 <div class="well">
@@ -58,7 +58,7 @@
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default" ng-click="sendText(txt); txt=null;" ng-disabled="txtForm.$invalid">Send Text</button>
+      <button type="submit" class="btn btn-info" ng-click="sendText(txt); txt=null;" ng-disabled="txtForm.$invalid">Send Text</button>
     </div>
   </div>
 </form>
